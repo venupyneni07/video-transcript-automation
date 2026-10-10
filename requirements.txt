@@ -1,0 +1,7 @@
+# Update yt-dlp when platform extractors change. Install inside a virtualenv.
+yt-dlp[default]>=2025.11.12
+faster-whisper>=1.2.1,<2
+# faster-whisper 1.2.1 uses av.open(metadata_errors=...), removed in PyAV 19.
+# https://github.com/SYSTRAN/faster-whisper/issues/1589
+av>=11,<19
+pytest>=8,<10
